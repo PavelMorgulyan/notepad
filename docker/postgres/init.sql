@@ -1,0 +1,5 @@
+CREATE USER admin WITH PASSWORD 'dev_admin';
+
+CREATE DATABASE notepad_db;
+
+GRANT ALL PRIVILEGES ON DATABASE notepad_db TO admin;

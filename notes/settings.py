@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'api.apps.ApiConfig', 
     'rest_framework',
     'corsheaders',
+    'psycopg2',
 ]
 
 MIDDLEWARE = [
@@ -85,8 +86,18 @@ WSGI_APPLICATION = 'notes.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        # 'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME':'notepad_db',
+        # 'USER': 'postgres',
+        # 'HOST': 'localhost',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME':'notepad_db',
+        'USER': 'admin',
+        'PASSWORD':'dev_admin', 
+        'HOST': 'localhost',
+        'PORT':'5432', 
     }
 }
 
