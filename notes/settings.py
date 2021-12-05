@@ -92,7 +92,7 @@ DATABASES = {
         # 'NAME':'notepad_db',
         # 'USER': 'postgres',
         # 'HOST': 'localhost',
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME':'notepad_db',
         'USER': 'admin',
         'PASSWORD':'dev_admin', 
