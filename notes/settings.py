@@ -96,8 +96,8 @@ DATABASES = {
         'NAME':'notepad_db',
         'USER': 'admin',
         'PASSWORD':'dev_admin', 
-        'HOST': 'localhost',
-        'PORT':'5432', 
+        'HOST': 'postgresdb',
+        'PORT': 5432, 
     }
 }
 

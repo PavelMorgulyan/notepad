@@ -1,0 +1,4 @@
+myenv/
+frontend/nodemodules/
+.idea/
+.pytestcache/
