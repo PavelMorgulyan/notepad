@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react'
 import ListItem from '../components/ListItem'
 import AddButton from '../components/AddButton'
-
+import MicroButton from '../components/MicroButton'
 
 const NotesListPage = () => {
 
@@ -29,6 +29,7 @@ const NotesListPage = () => {
                    <ListItem key={index} note={note}/>
                 ))}
             <AddButton />
+            <MicroButton />
            </div>
            
         </div>

@@ -18,6 +18,8 @@ WORKDIR /usr/src/app
 
 COPY requirements.txt .
 COPY entrypoint.sh .
+ARG SECRET_KEY_DJANGO_NOTEPAD='django-insecure-ut%u9p4&@$&d8&fltb(w&=s_=hdbi^1sk46jar%&#o*+o2uzo@'
+ENV SECRET_KEY_DJANGO_NOTEPAD=$SECRET_KEY_DJANGO_NOTEPAD
 RUN pip install -r requirements.txt 
 RUN chmod +x entrypoint.sh
 
